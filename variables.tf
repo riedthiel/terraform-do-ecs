@@ -14,7 +14,7 @@ variable "key_name" {
 }
 
 variable "instance_type" {
-  default     = "t2.small"
+  default     = "m4.large"
   description = "AWS instance type"
 }
 
@@ -35,4 +35,5 @@ variable "asg_desired" {
 
 variable "admin_cidr_ingress" {
   description = "CIDR to allow tcp/22 ingress to EC2 instance"
+  default="0.0.0.0/0"
 }
